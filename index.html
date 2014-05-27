@@ -3,19 +3,22 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <title>Space Invaders by Nicole Cook</title> 
+    <style>
+      #gameboard { background-color:#376bd6; } 
+      #game-wrapper { margin:20px; width: 500px; }
+      @font-face {
+        font-family:"biteBullet";
+          src: url("fonts/biteBullet.ttf");
+      }
+  </style>
   <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js'></script>
   <script src='js/engine.js'></script>
   <script src='js/game.js'></script>
   <script src='js/level.js'></script>
-
-  <style>
-      #gameboard { background-color:#376bd6; } 
-      #game-wrapper { margin:20px; width: 500px; } 
-  </style>
 </head>
 <body>
   <div id='game-wrapper'>
-    <canvas id='gameboard' width='800' height='800'></canvas>
+    <canvas id='gameboard' width='800' height='800'></canvas> <!-- I AM A HTML COMMENT -->
   </div>
 </body>
 </html>
