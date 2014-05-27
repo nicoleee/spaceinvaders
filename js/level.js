@@ -48,8 +48,8 @@
   var spriteData = {
     'alien1': { sx: 0,  sy: 0,  w: 47, h: 35, cls: Alien, frames: 3 }, //amount of frames for alien 1 determined here
     'alien2': { sx: 0,  sy: 36, w: 47, h: 35, cls: Alien, frames: 3 }, //amount of frames for alien 2 determined here
-    'player': { sx: 0,  sy: 72, w: 54, h: 33, cls: Player },
-    'missile': { sx: 0,  sy: 86, w: 3,  h: 20, cls: Missile }
+    'player': { sx: 0,  sy: 72, w: 53, h: 34, cls: Player },
+    'missile': { sx: 52,  sy: 95, w: 4,  h: 11, cls: Missile }
   }
 
   function startGame() {
