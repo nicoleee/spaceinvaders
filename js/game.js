@@ -99,7 +99,7 @@ Player.prototype.die = function() {
 }
 
 Player.prototype.step = function(dt) {
-  if(Game.keys['left']) { this.x -= 100 * dt; }
+  if(Game.keys['left']) { this.x -= 100 * dt; }             //moving the player only left and right
   if(Game.keys['right']) { this.x += 100 * dt; }
 
   if(this.x < 0) this.x = 0;
@@ -107,7 +107,7 @@ Player.prototype.step = function(dt) {
 
   this.reloading--;
 
-  if(Game.keys['fire'] && this.reloading <= 0 && this.board.missiles < 100) {
+  if(Game.keys['fire'] && this.reloading <= 0 && this.board.missiles < 100) {   //allowing player to fire laser
     GameAudio.play('fire');
     this.board.addSprite('missile',
                           this.x + this.w/2 - Sprites.map.missile.w/2,
