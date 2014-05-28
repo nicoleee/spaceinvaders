@@ -54,11 +54,11 @@ var GameScreen = function GameScreen(text,text2,callback) {
 
   this.render = function(canvas) {
     canvas.clearRect(0,0,Game.width,Game.height);
-    canvas.font = "100px biteBullet";      //first line of font size and family
+    canvas.font = "80px biteBullet";      //first line of font size and family
     var measure = canvas.measureText(text);  
     canvas.fillStyle = "#ff81b6";          //font colour
     canvas.fillText(text,Game.width/2 - measure.width/2,Game.height/2);
-    canvas.font = "80px biteBullet";      //second line of font size and family
+    canvas.font = "60px biteBullet";      //second line of font size and family
     var measure2 = canvas.measureText(text2);
     canvas.fillText(text2,Game.width/2 - measure2.width/2,Game.height/2 + 80);
   };
