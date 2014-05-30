@@ -8,11 +8,16 @@
 	  background-color:#376bd6; 
 	  } 
       #game-wrapper { 
-	  margin:20px; width: 500px; 
+	  margin:5px; width: 500px; 
 	  }
 	  #playerScore { 
 	  color:#376bd6; 
-	  font-size:36px;
+	  font-size:24px;
+	  font-family:"biteBullet";
+	  }
+	  #text {
+	  color:#376bd6; 
+	  font-size:25px;
 	  font-family:"biteBullet";
 	  }
       @font-face {
@@ -20,7 +25,7 @@
           src: url("fonts/biteBullet.ttf");
 }
 	  /*
-	  css used to change the colour of the background, the margin around the game canvas and the font used throughout the game
+	  css used to change the colour of the background, the margin around the game canvas and the font used throughout the game and for the scorecount
 	  */
   </style>
   <script src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js'></script>
@@ -30,10 +35,10 @@
 </head>
 <body>
   <div id='game-wrapper'>
-  <div id='scoreboard'>
+  <div id='text'>Aliens killed: </div>
   <div id='playerScore'>
 </div>
-    <canvas id='gameboard' width='600' height='560'>
+    <canvas id='gameboard' width='600' height='570'> 
 </canvas> 
     <!-- 
     size of the game canvas, needs to be suitable for multiple screens
