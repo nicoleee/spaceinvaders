@@ -77,6 +77,18 @@
                                  });
     Game.loadBoard(screen);
   }
+  
+  
+  function updateScore(score,player){
+switch(player)  {
+    case 1 : 
+        $('#playerscore').text(score);
+        break;
+    default :
+        console.log('received not acceptable player number');
+}
+}
+
 
   $(function() {
     GameAudio.load({ 'fire' : 'media/laser.ogg', 'die' : 'media/explosion.ogg' }, //sound in game

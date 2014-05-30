@@ -80,8 +80,16 @@ var GameBoard = function GameBoard(level_number) {
     sprite.w = Sprites.map[name].w; 
     sprite.h = Sprites.map[name].h;
     return sprite;
+	
+	var playerScore = 0;
+
+this.render = function(canvas)	{
+    canvas.font = "80px biteBullet";
+    var measure = canvas.measureText(text);  
+	canvas.fillStyle = "#ff81b6";
+	canvas.fillText( "score:" + playerScore + "", 100, 100); //scoreboard
+}
   };
-  
 
   this.iterate = function(func) {
      for(var i=0,len=this.objects.length;i<len;i++) {
@@ -199,4 +207,3 @@ var GameAudio = new function() {
     }
   };
 };
-

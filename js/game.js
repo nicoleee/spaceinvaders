@@ -42,8 +42,6 @@ var AlienFlock = function AlienFlock() {
 
 }
 
-
-
 var Alien = function Alien(opts) {
   this.flock = opts['flock'];
   this.frame = 0;

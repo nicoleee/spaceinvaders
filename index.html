@@ -9,7 +9,7 @@
       @font-face {
         font-family:"biteBullet";
           src: url("fonts/biteBullet.ttf");
-      }
+}
 	  /*
 	  css used to change the colour of the background, the margin around the game canvas and the font used throughout the game
 	  */
@@ -21,6 +21,9 @@
 </head>
 <body>
   <div id='game-wrapper'>
+  <div id='scoreboard'>
+  <span id='playerscore'></span>
+</div>
     <canvas id='gameboard' width='600' height='600'></canvas> 
     <!-- 
     size of the game canvas, needs to be suitable for multiple screens
