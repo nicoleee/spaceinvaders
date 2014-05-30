@@ -89,7 +89,7 @@ this.render = function(canvas)	{
     canvas.font = "80px biteBullet";
     var measure = canvas.measureText(text);  
 	canvas.fillStyle = "#ff81b6"; //colour of font used
-	canvas.fillText( "score:" + playerScore + "", 100, 100); //scoreboard text and coordinates
+	canvas.fillText( "score:" + playerScore + "score:", 100, 100); //scoreboard text and coordinates
 	Game.playerScore++
 }
   };

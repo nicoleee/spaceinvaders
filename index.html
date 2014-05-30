@@ -4,8 +4,17 @@
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <title>Space Invaders by Nicole Cook</title> 
     <style>
-      #gameboard { background-color:#376bd6; } 
-      #game-wrapper { margin:20px; width: 500px; }
+      #gameboard { 
+	  background-color:#376bd6; 
+	  } 
+      #game-wrapper { 
+	  margin:20px; width: 500px; 
+	  }
+	  #playerScore { 
+	  color:#376bd6; 
+	  font-size:36px;
+	  font-family:"biteBullet";
+	  }
       @font-face {
         font-family:"biteBullet";
           src: url("fonts/biteBullet.ttf");
@@ -24,7 +33,7 @@
   <div id='scoreboard'>
   <div id='playerScore'>
 </div>
-    <canvas id='gameboard' width='600' height='600'>
+    <canvas id='gameboard' width='600' height='560'>
 </canvas> 
     <!-- 
     size of the game canvas, needs to be suitable for multiple screens
