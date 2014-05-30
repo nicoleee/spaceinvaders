@@ -8,6 +8,7 @@ var AlienFlock = function AlienFlock() {
   this.draw = function() {};
 
   this.die = function() {
+	  Game.playerScore++
     if(Game.board.nextLevel()) {
       Game.loadBoard(new GameBoard(Game.board.nextLevel())); 
     } else {

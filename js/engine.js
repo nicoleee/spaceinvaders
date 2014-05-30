@@ -7,6 +7,7 @@ var Game = new function() {
     this.canvas = this.canvas_elem.getContext('2d');
     this.width = $(this.canvas_elem).attr('width');
     this.height= $(this.canvas_elem).attr('height');
+	this.playerScore;
 
     $(window).keydown(function(event) {
       if(KEY_CODES[event.keyCode]) Game.keys[KEY_CODES[event.keyCode]] = true;
@@ -24,6 +25,7 @@ var Game = new function() {
   this.loadBoard = function(board) { Game.board = board; };
 
   this.loop = function() { 
+  	document.getElementById('playerScore').innerHTML = Game.playerScore;
     Game.board.step(24/1000); 
     Game.board.render(Game.canvas);
     setTimeout(Game.loop,20);               //changes the speed and the amount the player can shoot

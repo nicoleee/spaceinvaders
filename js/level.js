@@ -82,7 +82,7 @@
   function updateScore(score,player){
 switch(player)  {
     case 1 : 
-        $('#playerscore').text(score);
+        $('#playerScore').text(score);
         break;
     default :
         console.log('received not acceptable player number');
