@@ -7,7 +7,7 @@ var Game = new function() {
     this.canvas = this.canvas_elem.getContext('2d');
     this.width = $(this.canvas_elem).attr('width');
     this.height= $(this.canvas_elem).attr('height');
-	this.playerScore;
+	this.playerScore =0
 
     $(window).keydown(function(event) {
       if(KEY_CODES[event.keyCode]) Game.keys[KEY_CODES[event.keyCode]] = true;
@@ -88,8 +88,9 @@ var GameBoard = function GameBoard(level_number) {
 this.render = function(canvas)	{
     canvas.font = "80px biteBullet";
     var measure = canvas.measureText(text);  
-	canvas.fillStyle = "#ff81b6";
-	canvas.fillText( "score:" + playerScore + "", 100, 100); //scoreboard
+	canvas.fillStyle = "#ff81b6"; //colour of font used
+	canvas.fillText( "score:" + playerScore + "", 100, 100); //scoreboard text and coordinates
+	Game.playerScore++
 }
   };
 
