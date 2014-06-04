@@ -1,6 +1,10 @@
-##Space Invaders by Nicole Cook
-My game is a twist on the original Space Invaders game. It displays a 'girly nintendo' style due to the mix of pastel colours, scribbly typography and high pitched sounds. My aim was to keep it simple and just alter the stylisation. Although the code has been changed the structure to win and lose the game is the same as the original. I made sure each level became progressively more difficult but I also made sure it was possible to win. I did this with user testing. 
+Space Invaders by Nicole Cook
+My game is a twist on the original Space Invaders game. 
+It displays a 'girly nintendo' style due to the mix of pastel colours, scribbly typography and high pitched sounds. 
+My aim was to keep it simple and just alter the stylisation. 
+Although the code has been changed the structure to win and lose the game is the same as the original. 
+I made sure each level became progressively more difficult but I also made sure it was possible to win. I did this with user testing. 
 
-##Original source:
+Original source:
 Slides up at:
 http://www.slideshare.net/cykod/html5-game-development-introduction-5815787
